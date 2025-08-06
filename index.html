@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sezary Syndrome Research Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <i class="fas fa-dna"></i>
+                    Sezary Syndrome Research Analysis
+                </h1>
+                <p class="site-subtitle">PhD Research Documentation & Analysis Framework</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#overview" class="nav-link active">Overview</a></li>
+                <li><a href="#biomarkers" class="nav-link">Biomarker Analysis</a></li>
+                <li><a href="#signatures" class="nav-link">Signature Analysis</a></li>
+                <li><a href="#pathways" class="nav-link">Pathway Analysis</a></li>
+                <li><a href="#methods" class="nav-link">Methods & Tools</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Overview Section -->
+            <section id="overview" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-microscope"></i>
+                        Research Overview
+                    </h2>
+                    <p class="section-description">
+                        Comprehensive analysis framework for understanding Sezary Syndrome through three complementary approaches
+                    </p>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Biomarker Analysis</h3>
+                        <p>Identification of novel biomarkers distinguishing malignant from normal CD4+ T cells using LIBRA and pseudobulk methods.</p>
+                        <div class="card-stats">
+                            <span class="stat">Top 50 genes</span>
+                            <span class="stat">DESeq2-LRT</span>
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-fingerprint"></i>
+                        </div>
+                        <h3>Signature Analysis</h3>
+                        <p>Molecular signatures defining malignant CD4+ T Sezary cells and inter-patient heterogeneity analysis.</p>
+                        <div class="card-stats">
+                            <span class="stat">Patient comparisons</span>
+                            <span class="stat">Cell line analysis</span>
+                        </div>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Pathway Analysis</h3>
+                        <p>Biological processes and pathways altered in malignant CD4+ T Sezary cells using ClusterProfiler and multiple databases.</p>
+                        <div class="card-stats">
+                            <span class="stat">27 databases</span>
+                            <span class="stat">GO, KEGG, Reactome</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Biomarker Analysis Section -->
+            <section id="biomarkers" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-search"></i>
+                        Biomarker Analysis
+                    </h2>
+                    <p class="section-description">
+                        Novel biomarkers identification in Sezary syndrome distinguishing malignant from normal CD4+ T cells
+                    </p>
+                </div>
+
+                <div class="analysis-content">
+                    <div class="research-question">
+                        <h3><i class="fas fa-question-circle"></i> Scientific Question</h3>
+                        <p>What novel biomarkers can be identified in Sezary syndrome that distinguish malignant from normal CD4+ T cells?</p>
+                    </div>
+
+                    <div class="methodology">
+                        <h3><i class="fas fa-cogs"></i> Computational Approach</h3>
+                        <div class="method-grid">
+                            <div class="method-card">
+                                <h4>Primary Tool</h4>
+                                <p><strong>LIBRA</strong> - Library for Integrated Biological Research Analysis</p>
+                            </div>
+                            <div class="method-card">
+                                <h4>Method</h4>
+                                <p><strong>Pseudobulk methods</strong> using DESeq2-LRT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameters-table">
+                        <h3><i class="fas fa-table"></i> Analysis Parameters</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Value</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>de_family</code></td>
+                                    <td>pseudobulk</td>
+                                    <td>Differential expression family method</td>
+                                </tr>
+                                <tr>
+                                    <td><code>de_method</code></td>
+                                    <td>DESeq2</td>
+                                    <td>Statistical method for differential expression</td>
+                                </tr>
+                                <tr>
+                                    <td><code>de_type</code></td>
+                                    <td>LRT</td>
+                                    <td>Likelihood Ratio Test</td>
+                                </tr>
+                                <tr>
+                                    <td><code>cell_type_col</code></td>
+                                    <td>cell_type</td>
+                                    <td>Column identifying cell types</td>
+                                </tr>
+                                <tr>
+                                    <td><code>replicate_col</code></td>
+                                    <td>sample</td>
+                                    <td>Column identifying biological replicates</td>
+                                </tr>
+                                <tr>
+                                    <td><code>label_col</code></td>
+                                    <td>label</td>
+                                    <td>Column identifying experimental conditions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="selection-criteria">
+                        <h3><i class="fas fa-filter"></i> Biomarker Selection Criteria</h3>
+                        <div class="criteria-grid">
+                            <div class="criteria-card upregulated">
+                                <h4>Upregulated Genes</h4>
+                                <ul>
+                                    <li>Filtered on mean expression</li>
+                                    <li><strong>avglogFC > 1.5</strong></li>
+                                    <li><strong>Malignant.pct > 50%</strong></li>
+                                    <li>Top 50 genes by p-val-adj</li>
+                                </ul>
+                            </div>
+                            <div class="criteria-card downregulated">
+                                <h4>Downregulated Genes</h4>
+                                <ul>
+                                    <li>Filtered on mean expression</li>
+                                    <li><strong>avglogFC < -1</strong></li>
+                                    <li><strong>Control.pct > 50%</strong></li>
+                                    <li>Top 50 genes by p-val-adj</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-sources">
+                        <h3><i class="fas fa-database"></i> Data Sources</h3>
+                        <div class="source-grid">
+                            <div class="source-card malignant">
+                                <h4>Malignant Samples</h4>
+                                <p>Cell lines: L1, L2, L3, L4, L5, L6, L7</p>
+                            </div>
+                            <div class="source-card control">
+                                <h4>Control Samples</h4>
+                                <p>PBMC, PBMC_10x</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-link">
+                        <h3><i class="fas fa-external-link-alt"></i> Results</h3>
+                        <p>Selection of Top 50 upregulated and downregulated genes based upon the specified criteria.</p>
+                        <a href="https://github.com/neurorestore/Libra/Biomarkers_Analysis" target="_blank" class="result-button">
+                            <i class="fab fa-github"></i>
+                            View Biomarkers Analysis Results
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Signature Analysis Section -->
+            <section id="signatures" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-fingerprint"></i>
+                        Signature Analysis
+                    </h2>
+                    <p class="section-description">
+                        Molecular signatures defining malignant CD4+ T Sezary cells and inter-patient heterogeneity
+                    </p>
+                </div>
+
+                <div class="analysis-content">
+                    <div class="research-questions">
+                        <h3><i class="fas fa-question-circle"></i> Scientific Questions</h3>
+                        <div class="question-grid">
+                            <div class="question-card">
+                                <h4>Malignant vs Control</h4>
+                                <p>What molecular signatures define malignant (CD4+ T Sezary cells) compared to normal CD4+ T cells?</p>
+                            </div>
+                            <div class="question-card">
+                                <h4>Patient Heterogeneity</h4>
+                                <p>What molecular signatures distinguish patients with Sezary syndrome, and how do these signatures reflect inter-patient heterogeneity?</p>
+                            </div>
+                            <div class="question-card">
+                                <h4>Cell Line Variation</h4>
+                                <p>What molecular signatures define each Sezary cell line, and how do they reflect intra- and inter-cellline heterogeneity?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signature-analyses">
+                        <h3><i class="fas fa-chart-line"></i> Differential Expression Analyses</h3>
+                        
+                        <div class="analysis-table">
+                            <h4>Malignant vs Control Analysis</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Contrast</th>
+                                        <th>Tool</th>
+                                        <th>Method</th>
+                                        <th>Results</th>
+                                        <th>P-value Range</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Malignant (L1-L7) vs Control (PBMC, PBMC_10x)</td>
+                                        <td>LIBRA</td>
+                                        <td>Pseudobulk (DESeq2-LRT)</td>
+                                        <td>200 upregulated, 300 downregulated signatures</td>
+                                        <td>1.193363e-10 to 0.02051237</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="analysis-table">
+                            <h4>Patient-to-Patient Comparisons</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Comparison</th>
+                                        <th>Tool</th>
+                                        <th>Upregulated</th>
+                                        <th>Downregulated</th>
+                                        <th>P-value Range</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Patient 1 vs Patient 2</td>
+                                        <td>LIBRA (DESeq2-LRT)</td>
+                                        <td>200</td>
+                                        <td>300</td>
+                                        <td>0.0002519858 to 0.003293049</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient 1 vs Patient 3</td>
+                                        <td>LIBRA (DESeq2-LRT)</td>
+                                        <td>300</td>
+                                        <td>300</td>
+                                        <td>0.001808809 to 0.05010035</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient 2 vs Patient 3</td>
+                                        <td>LIBRA (DESeq2-LRT)</td>
+                                        <td>200</td>
+                                        <td>150</td>
+                                        <td>0.03384516 to 0.04943307</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="selection-criteria">
+                            <h4><i class="fas fa-filter"></i> Signature Selection Criteria</h4>
+                            <div class="criteria-list">
+                                <ol>
+                                    <li>Filtered on mean expression</li>
+                                    <li><strong>Upregulated:</strong> avglogFC > 1.5</li>
+                                    <li><strong>Downregulated:</strong> avglogFC < -1 (or -1.5 for patient comparisons)</li>
+                                    <li>Ranked by adjusted p-value</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-link">
+                        <h3><i class="fas fa-external-link-alt"></i> Results</h3>
+                        <div class="result-buttons">
+                            <a href="https://github.com/neurorestore/Libra/Signatures-pseudobulk_DE_and_Enrichement_Analysis" target="_blank" class="result-button">
+                                <i class="fab fa-github"></i>
+                                Signatures Analysis Results
+                            </a>
+                            <a href="https://github.com/neurorestore/Libra/Pseudobulk_Patient_comparison" target="_blank" class="result-button">
+                                <i class="fab fa-github"></i>
+                                Patient Comparison Results
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pathway Analysis Section -->
+            <section id="pathways" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Pathway Enrichment Analysis
+                    </h2>
+                    <p class="section-description">
+                        Biological processes and pathways altered in malignant CD4+ T Sezary cells
+                    </p>
+                </div>
+
+                <div class="analysis-content">
+                    <div class="research-questions">
+                        <h3><i class="fas fa-question-circle"></i> Scientific Questions</h3>
+                        <div class="question-grid">
+                            <div class="question-card">
+                                <h4>Malignant vs Control</h4>
+                                <p>Which biological processes and pathways are altered in malignant CD4+ T Sezary cells compared to normal CD4+ T cells?</p>
+                            </div>
+                            <div class="question-card">
+                                <h4>Patient-Specific Pathways</h4>
+                                <p>Which pathways and biological processes are uniquely altered in each patient, contributing to inter-patient heterogeneity?</p>
+                            </div>
+                            <div class="question-card">
+                                <h4>Cell Line Pathways</h4>
+                                <p>What biological pathways are differentially regulated across Sezary cell lines, providing insights into intra- and inter-cellline heterogeneity?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pathway-analyses">
+                        <h3><i class="fas fa-tools"></i> Enrichment Analysis Tools & Databases</h3>
+                        
+                        <div class="analysis-table">
+                            <h4>Malignant vs Control Pathway Analysis</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tool</th>
+                                        <th>Databases</th>
+                                        <th>Parameters</th>
+                                        <th>Results Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Fgsea</strong></td>
+                                        <td>Hallmark, KEGG</td>
+                                        <td>Sorted on avg_logFC, *pval_adj</td>
+                                        <td rowspan="2">
+                                            <a href="https://github.com/neurorestore/Libra/Signatures-pseudobulk_DE_and_Enrichement_Analysis" target="_blank" class="table-link">
+                                                <i class="fab fa-github"></i> View Results
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>ClusterProfiler</strong></td>
+                                        <td>GO, Reactome, KEGG, Hallmark</td>
+                                        <td>Autocompare (27 different databases)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="analysis-table">
+                            <h4>Patient Comparison Pathway Analysis</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Comparison</th>
+                                        <th>Tool</th>
+                                        <th>Databases</th>
+                                        <th>Results Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Patient 1 vs Patient 2</td>
+                                        <td>ClusterProfiler</td>
+                                        <td>GO, Reactome, KEGG, Hallmark</td>
+                                        <td rowspan="3">
+                                            <a href="https://github.com/neurorestore/Libra/Pseudobulk_Patient_comparison" target="_blank" class="table-link">
+                                                <i class="fab fa-github"></i> Patient Comparisons
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient 1 vs Patient 3</td>
+                                        <td>ClusterProfiler</td>
+                                        <td>GO, Reactome, KEGG, Hallmark</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Patient 2 vs Patient 3</td>
+                                        <td>ClusterProfiler</td>
+                                        <td>GO, Reactome, KEGG, Hallmark</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="database-info">
+                        <h3><i class="fas fa-database"></i> Database Coverage</h3>
+                        <div class="database-grid">
+                            <div class="database-card">
+                                <h4>Gene Ontology (GO)</h4>
+                                <p>Biological processes, molecular functions, cellular components</p>
+                            </div>
+                            <div class="database-card">
+                                <h4>Reactome</h4>
+                                <p>Pathway database with detailed molecular interactions</p>
+                            </div>
+                            <div class="database-card">
+                                <h4>KEGG</h4>
+                                <p>Kyoto Encyclopedia of Genes and Genomes pathways</p>
+                            </div>
+                            <div class="database-card">
+                                <h4>Hallmark</h4>
+                                <p>MSigDB hallmark gene sets representing biological states</p>
+                            </div>
+                            <div class="database-card comprehensive">
+                                <h4>Comprehensive Coverage</h4>
+                                <p><strong>27 different databases</strong> via ClusterProfiler Autocompare</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Methods & Tools Section -->
+            <section id="methods" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-tools"></i>
+                        Methods & Computational Tools
+                    </h2>
+                    <p class="section-description">
+                        Comprehensive overview of computational approaches and software tools used in the analysis
+                    </p>
+                </div>
+
+                <div class="methods-content">
+                    <div class="tools-grid">
+                        <div class="tool-card primary">
+                            <div class="tool-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>LIBRA</h3>
+                            <p class="tool-description">Library for Integrated Biological Research Analysis</p>
+                            <div class="tool-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Pseudobulk differential expression analysis</li>
+                                    <li>DESeq2 integration with LRT testing</li>
+                                    <li>Single-cell RNA-seq data processing</li>
+                                    <li>Batch effect correction</li>
+                                </ul>
+                            </div>
+                            <div class="tool-usage">
+                                <h4>Used for:</h4>
+                                <span class="usage-tag">Biomarker Analysis</span>
+                                <span class="usage-tag">Signature Analysis</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>DESeq2</h3>
+                            <p class="tool-description">Differential gene expression analysis based on negative binomial distribution</p>
+                            <div class="tool-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Likelihood Ratio Test (LRT)</li>
+                                    <li>Multiple testing correction</li>
+                                    <li>Robust statistical modeling</li>
+                                    <li>Pseudobulk aggregation support</li>
+                                </ul>
+                            </div>
+                            <div class="tool-usage">
+                                <h4>Used for:</h4>
+                                <span class="usage-tag">Statistical Testing</span>
+                                <span class="usage-tag">P-value Calculation</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>ClusterProfiler</h3>
+                            <p class="tool-description">Statistical analysis and visualization of functional profiles for genes and gene clusters</p>
+                            <div class="tool-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Over-representation analysis</li>
+                                    <li>Gene set enrichment analysis</li>
+                                    <li>Multiple database integration</li>
+                                    <li>Autocompare functionality</li>
+                                </ul>
+                            </div>
+                            <div class="tool-usage">
+                                <h4>Used for:</h4>
+                                <span class="usage-tag">Pathway Analysis</span>
+                                <span class="usage-tag">Functional Enrichment</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h3>Fgsea</h3>
+                            <p class="tool-description">Fast Gene Set Enrichment Analysis</p>
+                            <div class="tool-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>Fast preranked GSEA</li>
+                                    <li>Adaptive multilevel splitting</li>
+                                    <li>Leading edge analysis</li>
+                                    <li>Multiple testing correction</li>
+                                </ul>
+                            </div>
+                            <div class="tool-usage">
+                                <h4>Used for:</h4>
+                                <span class="usage-tag">Ranked Gene Lists</span>
+                                <span class="usage-tag">Pathway Enrichment</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h3>Seurat</h3>
+                            <p class="tool-description">Single-cell RNA sequencing analysis toolkit</p>
+                            <div class="tool-features">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>FindMarkers function</li>
+                                    <li>Wilcoxon rank sum test</li>
+                                    <li>Cluster annotation</li>
+                                    <li>Cell type identification</li>
+                                </ul>
+                            </div>
+                            <div class="tool-usage">
+                                <h4>Used for:</h4>
+                                <span class="usage-tag">Cell Line Analysis</span>
+                                <span class="usage-tag">Cluster Markers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="methodology-overview">
+                        <h3><i class="fas fa-flow-chart"></i> Analysis Workflow</h3>
+                        <div class="workflow-steps">
+                            <div class="workflow-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Data Preprocessing</h4>
+                                    <p>Quality control, normalization, and cell type annotation of single-cell RNA-seq data</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Pseudobulk Aggregation</h4>
+                                    <p>Aggregation of single-cell data to pseudobulk samples for robust statistical analysis</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Differential Expression</h4>
+                                    <p>Statistical testing using DESeq2-LRT to identify significantly altered genes</p>
+                                </div>
+                            </div>
+                            <div class="workflow-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Functional Enrichment</h4>
+                                    <p>Pathway analysis using multiple databases to understand biological significance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results" class="section">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-chart-line"></i>
+                        Results & External Resources
+                    </h2>
+                    <p class="section-description">
+                        Links to detailed analysis results and code repositories
+                    </p>
+                </div>
+
+                <div class="results-content">
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Biomarker Analysis Results</h3>
+                            <p>Top 50 upregulated and downregulated genes distinguishing malignant from normal CD4+ T cells</p>
+                            <div class="result-stats">
+                                <span class="stat">50 upregulated genes</span>
+                                <span class="stat">50 downregulated genes</span>
+                                <span class="stat">DESeq2-LRT analysis</span>
+                            </div>
+                            <a href="https://github.com/neurorestore/Libra/Biomarkers_Analysis" target="_blank" class="result-link">
+                                <i class="fab fa-github"></i>
+                                View Analysis
+                            </a>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-icon">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h3>Signature Analysis Results</h3>
+                            <p>Molecular signatures and differential expression analysis with pathway enrichment</p>
+                            <div class="result-stats">
+                                <span class="stat">Patient comparisons</span>
+                                <span class="stat">Cell line analysis</span>
+                                <span class="stat">Enrichment analysis</span>
+                            </div>
+                            <a href="https://github.com/neurorestore/Libra/Signatures-pseudobulk_DE_and_Enrichement_Analysis" target="_blank" class="result-link">
+                                <i class="fab fa-github"></i>
+                                View Analysis
+                            </a>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Patient Comparison Results</h3>
+                            <p>Inter-patient heterogeneity analysis and patient-specific molecular signatures</p>
+                            <div class="result-stats">
+                                <span class="stat">3 patient comparisons</span>
+                                <span class="stat">Pathway analysis</span>
+                                <span class="stat">Heterogeneity insights</span>
+                            </div>
+                            <a href="https://github.com/neurorestore/Libra/Pseudobulk_Patient_comparison" target="_blank" class="result-link">
+                                <i class="fab fa-github"></i>
+                                View Analysis
+                            </a>
+                        </div>
+
+                        <div class="result-card main-repo">
+                            <div class="result-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>Main LIBRA Repository</h3>
+                            <p>Complete codebase and documentation for the Library for Integrated Biological Research Analysis</p>
+                            <div class="result-stats">
+                                <span class="stat">Complete toolkit</span>
+                                <span class="stat">Documentation</span>
+                                <span class="stat">Source code</span>
+                            </div>
+                            <a href="https://github.com/neurorestore/Libra" target="_blank" class="result-link">
+                                <i class="fab fa-github"></i>
+                                View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add New Analysis Section Template -->
+            <section id="new-analysis" class="section template-section" style="display: none;">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-plus-circle"></i>
+                        New Analysis Template
+                    </h2>
+                    <p class="section-description">
+                        Template for adding new analysis sections - copy and modify as needed
+                    </p>
+                </div>
+
+                <div class="analysis-content">
+                    <div class="research-question">
+                        <h3><i class="fas fa-question-circle"></i> Scientific Question</h3>
+                        <p>[Insert your research question here]</p>
+                    </div>
+
+                    <div class="methodology">
+                        <h3><i class="fas fa-cogs"></i> Computational Approach</h3>
+                        <div class="method-grid">
+                            <div class="method-card">
+                                <h4>Primary Tool</h4>
+                                <p><strong>[Tool Name]</strong> - [Tool Description]</p>
+                            </div>
+                            <div class="method-card">
+                                <h4>Method</h4>
+                                <p><strong>[Method Name]</strong> - [Method Description]</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parameters-table">
+                        <h3><i class="fas fa-table"></i> Analysis Parameters</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Value</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>[parameter_name]</code></td>
+                                    <td>[value]</td>
+                                    <td>[description]</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="results-link">
+                        <h3><i class="fas fa-external-link-alt"></i> Results</h3>
+                        <p>[Description of results]</p>
+                        <a href="[URL]" target="_blank" class="result-button">
+                            <i class="fab fa-github"></i>
+                            View [Analysis Name] Results
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sezary Syndrome Research</h3>
+                    <p>PhD Research Documentation & Analysis Framework</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Analysis Areas</h3>
+                    <ul>
+                        <li><a href="#biomarkers">Biomarker Analysis</a></li>
+                        <li><a href="#signatures">Signature Analysis</a></li>
+                        <li><a href="#pathways">Pathway Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://github.com/neurorestore/Libra" target="_blank">LIBRA Repository</a></li>
+                        <li><a href="#methods">Methods & Tools</a></li>
+                        <li><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sezary Syndrome Research Analysis. PhD Research Documentation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
