@@ -1,16 +1,7 @@
-# Sezary Syndrome Research Analysis - Static Website
+# Sezary Syndrome Research Analysis 
 
 A comprehensive static website documenting PhD research on Sezary Syndrome with detailed analysis information, parameters, tools, and results.
 
-## 🌟 Features
-
-- **Complete Research Documentation**: All information from your research document included
-- **Professional Academic Design**: Clean, responsive layout optimized for research presentation
-- **Interactive Navigation**: Smooth scrolling between sections with active link highlighting
-- **Search Functionality**: Built-in search to find specific content quickly
-- **Print-Friendly**: Optimized for printing research documentation
-- **Mobile Responsive**: Works perfectly on all devices
-- **GitHub Pages Ready**: Optimized for deployment on GitHub Pages
 
 ## 📁 File Structure
 
